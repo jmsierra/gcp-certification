@@ -5,6 +5,7 @@ provider "google" {
 
 module "instances" {
   source = "./modules/instances"
+  machine_type = var.machine_type
 }
 
 module "storage" {
