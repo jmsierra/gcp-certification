@@ -46,27 +46,27 @@ resource "google_compute_instance" "tf-instance-2" {
   allow_stopping_for_update = true
 }
 
-resource "google_compute_instance" "tf-instance-3" {
-  name = "tf-instance-621145"
-  zone = var.zone
-  machine_type = var.machine_type
+# resource "google_compute_instance" "tf-instance-3" {
+#   name = "tf-instance-621145"
+#   zone = var.zone
+#   machine_type = var.machine_type
   
-  boot_disk {
-    initialize_params {
-      image = "debian-cloud/debian-10"
-    }
-  }
+#   boot_disk {
+#     initialize_params {
+#       image = "debian-cloud/debian-10"
+#     }
+#   }
   
-  network_interface {
-    network = "default"
+#   network_interface {
+#     network = "default"
 
-    access_config {
-      // Ephemeral public IP
-    }
-  }
+#     access_config {
+#       // Ephemeral public IP
+#     }
+#   }
 
-  metadata_startup_script = <<-EOT
-        #!/bin/bash
-    EOT
-  allow_stopping_for_update = true
-}
+#   metadata_startup_script = <<-EOT
+#         #!/bin/bash
+#     EOT
+#   allow_stopping_for_update = true
+# }
