@@ -5,15 +5,27 @@ variable "region" {
 
 variable "zone" {
   type = string
-  default = "us-east1-d"
+  default = "us-east1-c"
 }
 
 variable "project_id" {
   type = string
-  default = "qwiklabs-gcp-03-6557f2dc9e47"
 }
 
 variable "machine_type" {
   type = string
   default = "n1-standard-1"
+}
+
+variable "instance_network" {
+  type = string
+  default = "default"
+}
+
+variable "instance_subnet1" {
+  type = string
+}
+
+variable "instance_subnet2" {
+  type = string
 }

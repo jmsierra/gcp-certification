@@ -10,7 +10,7 @@ variable "zone" {
 
 variable "project_id" {
   type = string
-  default = "qwiklabs-gcp-03-6557f2dc9e47"
+  default = "qwiklabs-gcp-04-60f149112d5b"
 }
 
 variable "machine_type" {
